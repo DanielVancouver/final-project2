@@ -139,11 +139,18 @@ nav a:hover {
 /*show some food*/
 
 .food {
-    display: flex;
+ /*  display: flex;*/
     max-width: 100%;
     background-color: rgba(220, 215, 211, 0.675);
+   /*justify-content: center;*/
+
+}
+
+.wrap {
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
 }
 
 .food img {
@@ -160,4 +167,18 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     padding: 2%;
+    margin-top: 3%;
+}
+
+.fresh-pasta {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    justify-content: center;
+}
+
+.cursive-text {
+    font-family: 'Pacifico', cursive;
+    font-size: 2vW;
+    letter-spacing: 1px;
 }
