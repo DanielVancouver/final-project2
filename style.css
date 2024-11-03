@@ -114,10 +114,10 @@ nav a:hover {
     background-color: rgba(220, 215, 211, 0.675);
     flex-direction: column;
     text-align: center;
-    border-radius: 100px;
+    border-radius: 100%;
     width: 40%;
-    margin-top: 7%;
-    margin-bottom: 7%;
+    margin-top: 12%;
+    margin-bottom: 12%;
 }
 
 .pres h1 {
@@ -128,10 +128,36 @@ nav a:hover {
 }
 
 .pres h2 {
-    font-size: xx-large;
+    font-size: x-large;
     color: rgba(131, 68, 26, 0.86);
     padding-left: 5%;
     padding-right: 5%;
     padding-bottom: 5%;
     padding-top: 0;
+}
+
+/*show some food*/
+
+.food {
+    display: flex;
+    max-width: 100%;
+    background-color: rgba(220, 215, 211, 0.675);
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.food img {
+    max-width: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+    max-height: 400px;
+}
+
+.image-wrapper {
+    display: flex;
+    object-fit: cover;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
 }
