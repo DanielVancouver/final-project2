@@ -182,3 +182,28 @@ nav a:hover {
     font-size: 2vW;
     letter-spacing: 1px;
 }
+
+/* footer */
+
+footer {
+    display: flex;
+    background-color: rgba(220, 215, 211, 0.675);
+margin-top: 5%;
+align-items: center;
+justify-content: space-between;
+}
+
+.logo-rights {
+    margin: 2em;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.social-icons img {
+width: 40px;
+padding: 1em;
+}
