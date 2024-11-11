@@ -14,6 +14,9 @@ body {
     width: 100%;
     justify-content: space-between;
     border-bottom: 3px solid rgba(131, 68, 26, 0.86);
+       position: fixed;
+       top: 0;    /* Fissa la navbar in cima alla finestra */
+       left: 0;
 }
 
 .title {
@@ -81,117 +84,98 @@ nav a:hover {
     padding: 3px;
 }
 
-/*MAIN PAGE*/
+/* MAIN */
 
-.container {
-    width: 100%;
-    background-image: url(images/cont.jpg);
-    background-size: 100% auto;
-    /* adapt the image and it doesn't repeat*/
-    height: 100vh;
-}
-
-.welcome {
-    background-color: antiquewhite;
-    position: relative;
-    padding: 2%;
-    border: solid black 2px;
-    border-radius: 20px;
-    display: inline-block;
-   margin: 5%;
-    font-size: xx-large;
-}
-
-/* presentation */
-
-.background-pres {
+.about-us { 
     display: flex;
-    background-color: rgb(227, 224, 224);
-    align-items: center;
-    justify-content: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
 }
 
-.pres {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: antiquewhite;
-    flex-direction: column;
-    text-align: center;
-    border-radius: 100%;
-    width: 40%;
-    margin-top: 7%;
-    margin-bottom: 7%;
+.about-us h1 {
     border: 8px solid rgba(131, 68, 26, 0.86);
+    border-radius: 20px;
 }
 
-.pres h1 {
-    margin-top: 7%;
-    color: rgba(131, 68, 26, 0.86);
-    padding-bottom: 0;
-    font-weight: bolder;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+.story {
+    border: 8px solid rgba(131, 68, 26, 0.86);
+    border-radius: 20px;
 }
 
-.pres h2 {
-    font-size: x-large;
-    color: rgba(131, 68, 26, 0.86);
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 5%;
-    padding-top: 0;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+.story h2 {
+    font-size: 2em;
 }
 
-/*show some food*/
-
-.food {
-    /*  display: flex;*/
-    max-width: 100%;
-    background-color: antiquewhite;
-    /*justify-content: center;*/
-
+.story p {
+    font-size: 1.2em;
 }
 
-.wrap {
+/* Nascondi il checkbox */
+.modal-toggle {
+    display: none;
+  }
+  
+  /* La sovrapposizione della modale */
+  .modal-overlay {
+    position: fixed; /* Si posiziona sopra gli altri contenuti */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Sfondo semi-trasparente */
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-}
-
-.food img {
-    max-width: 400px;
-    border-radius: 50%;
-    object-fit: cover;
-    max-height: 400px;
-}
-
-.image-wrapper {
-    display: flex;
-    object-fit: cover;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2%;
-    margin-top: 3%;
-}
-
-.fresh-pasta {
-    display: flex;
-    align-items: center;
+    visibility: hidden; /* La modale è nascosta di default */
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s;
+  }
+  
+  /* La finestra modale */
+  .modal {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
     max-width: 100%;
-    justify-content: center;
-}
-
-.cursive-text {
-    font-family: 'Pacifico', cursive;
-    color: rgb(91, 35, 0);
-    font-size: 2vW;
-    letter-spacing: 1px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-}
-
+  }
+  
+  .modal h2 {
+    margin-top: 0;
+  }
+  
+  label.close {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Mostra la modale quando il checkbox è selezionato */
+  .modal-toggle:checked + .open-modal + .modal-overlay {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  /* Modale centrata */
+  .modal-overlay .modal {
+    width: 90%;
+    max-width: 500px;
+  }
+  
+  /* Rende cliccabile il bottone per aprire la modale */
+  label.open-modal {
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+  }
 /* footer */
 
 footer {
@@ -201,6 +185,7 @@ footer {
     margin-top: 5%;
     align-items: center;
     justify-content: space-between;
+     
 }
 
 .logo-rights {
@@ -222,4 +207,6 @@ footer {
 
 #totopbtn {
     margin-right: 4em;
+  /*  position: fixed;
+    top: 0;*/
 }
