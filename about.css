@@ -14,9 +14,7 @@ body {
     width: 100%;
     justify-content: space-between;
     border-bottom: 3px solid rgba(131, 68, 26, 0.86);
-       position: fixed;
-       top: 0;    /* Fissa la navbar in cima alla finestra */
-       left: 0;
+    position: fixed;
 }
 
 .title {
@@ -207,6 +205,4 @@ footer {
 
 #totopbtn {
     margin-right: 4em;
-  /*  position: fixed;
-    top: 0;*/
 }

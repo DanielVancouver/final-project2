@@ -1,19 +1,68 @@
+:root {
+    --bg-primary: antiquewhite;
+    --bg-secondary: rgb(227, 224, 224);
+    --text-primary: rgba(131, 68, 26, 0.86);
+    --text-secondary: rgb(91, 35, 0);
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        /* Stato iniziale, dimensione normale */
+    }
+
+    50% {
+        transform: scale(1.3);
+        /* Stato a metà animazione, leggermente ingrandito */
+    }
+
+    100% {
+        transform: scale(1);
+        /* Torna alla dimensione normale */
+    }
+}
+
+@keyframes underline-animation {
+    0% {
+        width: 0;
+        /* La linea parte da 0 */
+    }
+
+    50% {
+        width: 100%;
+        /* La linea arriva a piena larghezza */
+    }
+
+    100% {
+        width: 0;
+        /* La linea torna a 0 */
+    }
+}
+
 body {
     display: flex;
     flex-direction: column;
     margin: 0;
     font-family: Arial, Arial, Helvetica, sans-serif;
-    background-color: rgb(227, 224, 224);
+    background-color: var(--bg-secondary);
 }
 
 /* NAVIGATION BAR*/
 .header {
-    background-color: antiquewhite;
+    background-color: var(--bg-primary);
     display: flex;
     align-items: center;
     width: 100%;
     justify-content: space-between;
-    border-bottom: 3px solid rgba(131, 68, 26, 0.86);
+    border-bottom: 3px solid var(--text-primary);
+    position: fixed;
+    z-index: 1000;
 }
 
 .title {
@@ -38,7 +87,7 @@ body {
 
 .title h1 {
     margin-top: 15px;
-    font-size: 50px;
+    font-size: 3vw;
 }
 
 .title h2 {
@@ -63,7 +112,7 @@ nav li {
 
 nav a {
     text-align: center;
-    color: rgba(131, 68, 26, 0.86);
+    color: var(--text-primary);
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     text-decoration: none;
     font-weight: bold;
@@ -89,24 +138,30 @@ nav a:hover {
     background-size: 100% auto;
     /* adapt the image and it doesn't repeat*/
     height: 100vh;
+    margin-top: 7%;
+
 }
 
 .welcome {
-    background-color: antiquewhite;
-    position: relative;
+    background-color: var(--bg-primary);
     padding: 2%;
     border: solid black 2px;
     border-radius: 20px;
     display: inline-block;
-   margin: 5%;
+    margin: 5%;
     font-size: xx-large;
+    opacity: 0.8;
+    transform: translateY(50px);
+    animation: fade-in 1s ease-in 0.6s;
+    z-index: 1;
+
 }
 
 /* presentation */
 
 .background-pres {
     display: flex;
-    background-color: rgb(227, 224, 224);
+    background-color: var(--bg-secondary);
     align-items: center;
     justify-content: center;
 }
@@ -115,27 +170,39 @@ nav a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: antiquewhite;
+    background-color: var(--bg-primary);
     flex-direction: column;
     text-align: center;
     border-radius: 100%;
     width: 40%;
     margin-top: 7%;
     margin-bottom: 7%;
-    border: 8px solid rgba(131, 68, 26, 0.86);
+    border: 8px solid var(--text-primary);
 }
 
 .pres h1 {
     margin-top: 7%;
-    color: rgba(131, 68, 26, 0.86);
+    color: var(--text-primary);
     padding-bottom: 0;
     font-weight: bolder;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.pres h1::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--text-primary);
+    animation: underline-animation 3s infinite; 
 }
 
 .pres h2 {
     font-size: x-large;
-    color: rgba(131, 68, 26, 0.86);
+    color: var(--text-primary);
     padding-left: 5%;
     padding-right: 5%;
     padding-bottom: 5%;
@@ -148,7 +215,7 @@ nav a:hover {
 .food {
     /*  display: flex;*/
     max-width: 100%;
-    background-color: antiquewhite;
+    background-color: var(--bg-primary);
     /*justify-content: center;*/
 
 }
@@ -165,7 +232,13 @@ nav a:hover {
     border-radius: 50%;
     object-fit: cover;
     max-height: 400px;
+    transition: border-radius 3s ease;
 }
+
+.food img:hover {
+    border-radius: 0%;
+}
+
 
 .image-wrapper {
     display: flex;
@@ -186,7 +259,7 @@ nav a:hover {
 
 .cursive-text {
     font-family: 'Pacifico', cursive;
-    color: rgb(91, 35, 0);
+    color: var(--text-secondary);
     font-size: 2vW;
     letter-spacing: 1px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
@@ -196,8 +269,8 @@ nav a:hover {
 
 footer {
     display: flex;
-    background-color: antiquewhite;
-    border-top: 3px solid rgba(131, 68, 26, 0.86);
+    background-color: var(--bg-primary);
+    border-top: 3px solid var(--text-primary);
     margin-top: 5%;
     align-items: center;
     justify-content: space-between;
@@ -222,4 +295,9 @@ footer {
 
 #totopbtn {
     margin-right: 4em;
+    animation: pulse 1s infinite 0.5s;
+}
+
+.totop img {
+    animation: pulse 1s infinite 0.5s;
 }

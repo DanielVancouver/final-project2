@@ -14,6 +14,7 @@ body {
     width: 100%;
     justify-content: space-between;
     border-bottom: 3px solid rgba(131, 68, 26, 0.86);
+    position: fixed;
 }
 
 .title {
