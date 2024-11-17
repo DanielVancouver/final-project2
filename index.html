@@ -5,29 +5,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mobile.css">
-    <link rel="stylesheet" href="tablet.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <header class="header">
-        <div class="title">
-            <h1>TITLE</h1>
-            <h2>BAKERY & CAFE'</h2>
+        <div class="top-header">
+            <div class="title">
+                <h1>TITLE</h1>
+                <h2>BAKERY & CAFE'</h2>
+            </div>
+            <div class="logo">
+                <img src="images/coffee-1-svgrepo-com.svg" alt="logo">
+            </div>
+            <button class="mobile-menu">
+                <img src="images/menu-svgrepo-com.svg" alt="menu" class="menu-icon">
+            </button>
         </div>
-        <div class="logo">
-            <img src="images/coffee-1-svgrepo-com.svg" alt="logo">
+        <div class="dropdown-menu">
+            <nav>
+                <ul class="mobile-list">
+                    <li><a href="home">HOME</a></li>
+                    <li><a href="pizza.html">PIZZA</a></li>
+                    <li><a href="about">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav class="header-navbar">
-            <ul>
-                <li><a href="home">HOME</a></li>
-                <li><a href="pizza.html">PIZZA</a></li>
-                <li><a href="classes">CLASSES</a></li>
-                <li><a href="about">ABOUT</a></li>
-                <li><a href="contact.html">CONTACT US</a></li>
-            </ul>
-        </nav>
+        <div class="header-navbar">
+            <nav>
+                <ul>
+                    <li><a href="home">HOME</a></li>
+                    <li><a href="pizza.html">PIZZA</a></li>
+                    <li><a href="about">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main class="container">
         <h1 class="welcome">ALWAYS WELCOMING, 24/7</h1>
@@ -40,17 +54,14 @@
         </div>
     </div>
     <div class="food">
-        <div class="wrap">
+        <div class="wrap-1">
             <div class="image-wrapper">
-                <!--   <label for="pasta">Our handmade pasta</label>-->
                 <img src="images/handmadepasta.webp" id="pasta" alt="" style="height: 300px; width: 300px;">
             </div>
             <div class="image-wrapper">
-                <!--<label for="coffee">Organic coffee</label>-->
                 <img src="images/pizza.webp" id="pizza" alt="" style="height: 300px; width: 300px;">
             </div>
             <div class="image-wrapper">
-                <!--<label for="pizza">Pizza romana</label>-->
                 <img src="images/pasteldeNata.jpg" id="pastel" alt="" style="height: 300px; width: 300px;">
             </div>
         </div>
@@ -58,17 +69,15 @@
             <p class="cursive-text">Fresh pasta, pizza, and pastries made daily at our place!</p>
         </div>
 
-        <div class="wrap">
+        <div class="wrap-2">
             <div class="image-wrapper">
-                <!--<label for="pastel">Pastries</label>-->
                 <img src="images/coffeebeans.jpg" id="coffee" alt="" style="height: 300px; width: 300px;">
             </div>
             <div class="image-wrapper">
-                <!--<label for="bf">breakfast</label>-->
                 <img src="images/breakfast.jpg" id="bf" alt="" style="height: 300px; width: 300px;">
             </div>
             <div class="image-wrapper">
-                <!--   <label for="latte">Latte art</label>-->
+
                 <img src="images/cappuccino.jpg" id="latte" alt="" style="height: 300px; width: 300px;">
             </div>
         </div>
@@ -76,10 +85,9 @@
             <p class="cursive-text">We serve great coffee, fresh croissants, and beautiful cappuccinos daily!</p>
         </div>
     </div>
-    <!--  <div class="location">
-        
-    </div>-->
+
     <footer>
+        
         <div class="logo-rights">
             <img src="images/coffee-1-svgrepo-com.svg" alt="logo">
             <p class="rights">© 2023 Chocobrat. All rights reserved.</p>
@@ -93,12 +101,13 @@
                     alt="linkedin" /></a>
         </div>
         <div class="totop">
-        <a href="#top" id="totopbtn" title="go to the top">
-            <img src="images/up-arrow-circle.svg" alt="Totop" />
-        </a>
+            <a href="#top" id="totopbtn" title="go to the top">
+                <img src="images/up-arrow-circle.svg" alt="Totop" />
+            </a>
         </div>
+        
     </footer>
 </body>
-<!-- PER LINK DELLA MAPPA <a href="https://www.google.com/maps/place/Piazza+Navona,+Roma" target="_blank">Visualizza Piazza Navona su Google Maps</a>-->
+
 
 </html>
