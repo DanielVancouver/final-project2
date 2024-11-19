@@ -10,55 +10,72 @@
 
 <body>
     <header class="header">
-        <div class="title">
-            <h1>TITLE</h1>
-            <h2>BAKERY & CAFE'</h2>
+        <div class="top-header">
+            <div class="title">
+                <h1>TITLE</h1>
+                <h2>BAKERY & CAFE'</h2>
+            </div>
+            <div class="logo">
+                <img src="images/coffee-1-svgrepo-com.svg" alt="logo">
+            </div>
+            <button class="mobile-menu">
+                <img src="images/menu-svgrepo-com.svg" alt="menu" class="menu-icon">
+            </button>
         </div>
-        <div class="logo">
-            <img src="images/coffee-1-svgrepo-com.svg" alt="logo">
+        <div class="dropdown-menu">
+            <nav>
+                <ul class="mobile-list">
+                    <li><a href="home">HOME</a></li>
+                    <li><a href="pizza.html">PIZZA</a></li>
+                    <li><a href="about">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav class="header-navbar">
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="pizza.html">PIZZA</a></li>
-                <li><a href="classes">CLASSES</a></li>
-                <li><a href="about">ABOUT</a></li>
-                <li><a href="contact.html">CONTACT US</a></li>
-            </ul>
-        </nav>
+        <div class="header-navbar">
+            <nav>
+                <ul>
+                    <li><a href="home">HOME</a></li>
+                    <li><a href="pizza.html">PIZZA</a></li>
+                    <li><a href="about">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-
-    <form class="form">
-        <div class="fname">
-            <label for="fname">First name:</label>
-            <input type="text" id="fname" name="fname" value="John">
-        </div>
-        <div class="lname">
-            <label for="lname">Last name:</label>
-            <input type="text" id="lname" name="lname" value="Doe">
-        </div>
-        <div class="adress">
-            <label for="adress">Adress:</label>
-            <input type="text" id="adress" name="adress" value="Street">
-        </div>
-        <div class="city">
-            <label for="city">City:</label>
-            <input type="text" id="city" name="adress" value="Vancouver">
-        </div>
-        <div class="mail">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="mail" value="info@mail">
-        </div>
-        <div class="tel">
-            <label for="tel">Telephone Number:</label>
-            <input type="tel" name="tel" id="tel" value="606 606 606">
-        </div>
-        <div class="form-item-button">
-            <button type="submit">Submit</button>
-        </div>
-    </form>
-
+    <section class="main-container">
+        <form class="form">
+            <div class="fname">
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname" value="John">
+            </div>
+            <div class="lname">
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname" value="Doe">
+            </div>
+            <div class="adress">
+                <label for="adress">Adress:</label>
+                <input type="text" id="adress" name="adress" value="Street">
+            </div>
+            <div class="city">
+                <label for="city">City:</label>
+                <input type="text" id="city" name="adress" value="Vancouver">
+            </div>
+            <div class="mail">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="mail" value="info@mail">
+            </div>
+            <div class="tel">
+                <label for="tel">Telephone Number:</label>
+                <input type="tel" name="tel" id="tel" value="606 606 606">
+            </div>
+            <div class="form-item-button">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </section>
     <footer>
+
         <div class="logo-rights">
             <img src="images/coffee-1-svgrepo-com.svg" alt="logo">
             <p class="rights">© 2023 Chocobrat. All rights reserved.</p>
@@ -72,12 +89,14 @@
                     alt="linkedin" /></a>
         </div>
         <div class="totop">
-        <a href="#top" id="totopbtn" title="go to the top">
-            <img src="images/up-arrow-circle.svg" alt="Totop" />
-        </a>
+            <a href="#top" id="totopbtn" title="go to the top">
+                <img src="images/up-arrow-circle.svg" alt="Totop" />
+            </a>
         </div>
-        </footer>
-        
+
+    </footer>
+</body>
+
 
 </body>
 

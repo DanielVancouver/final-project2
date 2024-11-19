@@ -28,7 +28,7 @@
                     <li><a href="home">HOME</a></li>
                     <li><a href="pizza.html">PIZZA</a></li>
                     <li><a href="about">ABOUT</a></li>
-                    <li><a href="contact.html">CONTACT US</a></li>
+                    <li><a href="#main-container">CONTACT US</a></li>
                 </ul>
             </nav>
         </div>
@@ -38,14 +38,16 @@
                     <li><a href="home">HOME</a></li>
                     <li><a href="pizza.html">PIZZA</a></li>
                     <li><a href="about">ABOUT</a></li>
-                    <li><a href="contact.html">CONTACT US</a></li>
+                    <li><a href="#main-container">CONTACT US</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+
     <main class="container">
         <h1 class="welcome">ALWAYS WELCOMING, 24/7</h1>
     </main>
+
     <div class="background-pres">
         <div class="pres">
             <h1>JOIN US TODAY</h1>
@@ -85,9 +87,38 @@
             <p class="cursive-text">We serve great coffee, fresh croissants, and beautiful cappuccinos daily!</p>
         </div>
     </div>
-
+    <section id="#main-container">
+        <form class="form">
+            <div class="fname">
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname" value="John">
+            </div>
+            <div class="lname">
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname" value="Doe">
+            </div>
+            <div class="adress">
+                <label for="adress">Adress:</label>
+                <input type="text" id="adress" name="adress" value="Street">
+            </div>
+            <div class="city">
+                <label for="city">City:</label>
+                <input type="text" id="city" name="adress" value="Vancouver">
+            </div>
+            <div class="mail">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="mail" value="info@mail">
+            </div>
+            <div class="tel">
+                <label for="tel">Telephone Number:</label>
+                <input type="tel" name="tel" id="tel" value="606 606 606">
+            </div>
+            <div class="form-item-button">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </section>
     <footer>
-        
         <div class="logo-rights">
             <img src="images/coffee-1-svgrepo-com.svg" alt="logo">
             <p class="rights">© 2023 Chocobrat. All rights reserved.</p>
@@ -102,10 +133,9 @@
         </div>
         <div class="totop">
             <a href="#top" id="totopbtn" title="go to the top">
-                <img src="images/up-arrow-circle.svg" alt="Totop" />
+                <img src="images/up-arrow-circle.svg" alt="Totop"/>
             </a>
         </div>
-        
     </footer>
 </body>
 
