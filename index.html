@@ -43,56 +43,62 @@
             </nav>
         </div>
     </header>
-<section id="home">
-    <main class="container">
-        <h1 class="welcome">ALWAYS WELCOMING, 24/7</h1>
-    </main>
+    <section id="home">
+        <main class="container">
+            <h1 class="welcome">ALWAYS WELCOMING, 24/7</h1>
+        </main>
 
-    <div class="background-pres">
-        <div class="pres">
-            <h1>JOIN US TODAY</h1>
-            <h2>"We use organic flour to craft delicious pastries and serve handcrafted coffees, all in a welcoming
-                atmosphere. Come enjoy a treat with us!"</h2>
-        </div>
-    </div>
-</section>
-<section id="about">
-    <div class="food">
-        <div class="wrap-1">
-            <div class="image-wrapper">
-                <img src="images/handmadepasta.webp" id="pasta" alt="" style="height: 300px; width: 300px;">
-            </div>
-            <div class="image-wrapper">
-                <img src="images/pizza.webp" id="pizza" alt="" style="height: 300px; width: 300px;">
-            </div>
-            <div class="image-wrapper">
-                <img src="images/pasteldeNata.jpg" id="pastel" alt="" style="height: 300px; width: 300px;">
+        <div class="background-pres">
+            <div class="pres">
+                <h1>JOIN US TODAY</h1>
+                <h2>"We use organic flour to craft delicious pastries and serve handcrafted coffees, all in a welcoming
+                    atmosphere. Come enjoy a treat with us!"</h2>
             </div>
         </div>
-        <div class="fresh-pasta">
-            <p class="cursive-text">Fresh pasta, pizza, and pastries made daily at our place!</p>
-        </div>
+    </section>
+    <section id="about">
+        <div class="food">
+            <div class="wrap-1">
+                <div class="image-wrapper">
+                    <img src="images/handmadepasta.webp" id="pasta" alt="" style="height: 300px; width: 300px;">
+                </div>
+                <div class="image-wrapper">
+                    <img src="images/pizza.webp" id="pizza" alt="" style="height: 300px; width: 300px;">
+                </div>
+                <div class="image-wrapper">
+                    <img src="images/pasteldeNata.jpg" id="pastel" alt="" style="height: 300px; width: 300px;">
+                </div>
+            </div>
+            <div class="fresh-pasta">
+                <p class="cursive-text">Fresh pasta, pizza, and pastries made daily at our place!</p>
+            </div>
 
-        <div class="wrap-2">
-            <div class="image-wrapper">
-                <img src="images/coffeebeans.jpg" id="coffee" alt="" style="height: 300px; width: 300px;">
-            </div>
-            <div class="image-wrapper">
-                <img src="images/breakfast.jpg" id="bf" alt="" style="height: 300px; width: 300px;">
-            </div>
-            <div class="image-wrapper">
+            <div class="wrap-2">
+                <div class="image-wrapper">
+                    <img src="images/coffeebeans.jpg" id="coffee" alt="" style="height: 300px; width: 300px;">
+                </div>
+                <div class="image-wrapper">
+                    <img src="images/breakfast.jpg" id="bf" alt="" style="height: 300px; width: 300px;">
+                </div>
+                <div class="image-wrapper">
 
-                <img src="images/cappuccino.jpg" id="latte" alt="" style="height: 300px; width: 300px;">
+                    <img src="images/cappuccino.jpg" id="latte" alt="" style="height: 300px; width: 300px;">
+                </div>
+            </div>
+            <div class="fresh-pasta">
+                <p class="cursive-text">We serve great coffee, fresh croissants, and beautiful cappuccinos daily!</p>
             </div>
         </div>
-        <div class="fresh-pasta">
-            <p class="cursive-text">We serve great coffee, fresh croissants, and beautiful cappuccinos daily!</p>
-        </div>
-    </div>
-</section>
-<section id="gallery">
+    </section>
+    <section id="gallery">
         <div class="pizza">
-            <img src="images/pizza-eating.jpg" class="img-pizza" alt="pizza pic.">
+            <picture>
+                <source srcset="images/pizza-eating.jpg" media="(min-width: 1024px)">
+                <source srcset="images/pizza-eating.jpg" media="(min-width: 768px)">
+                <source srcset="images/pizza-eating.jpg" media="(max-width: 767px)">
+                <img src="images/pizza-eating.jpg" srcset="images/pizza-eating.jpg 1x, images/pizza-eating.jpg 2x,"
+                    class="img-pizza" alt="pizza pic.">
+            </picture>
             <p>"Discover premium ingredients, expertly crafted and cooked to perfection, all served in a unique setting
                 where tradition meets excellence."<img src="images/coffee-1-svgrepo-com.svg" class="logo" alt="logo">
             </p>
@@ -187,7 +193,7 @@
         </div>
         <div class="totop">
             <a href="#top" id="totopbtn" title="go to the top">
-                <img src="images/up-arrow-circle.svg" alt="Totop"/>
+                <img src="images/up-arrow-circle.svg" alt="Totop" />
             </a>
         </div>
     </footer>
