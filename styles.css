@@ -69,7 +69,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 30px;
+    gap: 40px;
 }
 
 .title {
@@ -132,7 +132,11 @@ body {
 .mobile-list li {
     list-style-type: none;
 }
-
+@media (min-width: 500px) {
+    .top-header {
+        gap: 90px;
+    }
+}
 @media (min-width: 820px) {
    .header {
     flex-direction: row;
@@ -380,6 +384,108 @@ body {
         font-size: 1.5em;
     }
 }
+
+/*GALLERY*/
+
+.pizza {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-right: 10%;
+    align-items: center;
+    margin-top: 5em;
+    gap: 0;
+}
+
+.img-pizza {
+    max-height: 300px;
+    max-width: auto;
+    border-radius: 15%;
+    border: 5px solid rgba(131, 68, 26, 0.86);
+}
+
+.pizza p {
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    font-size: 16px;
+    color: rgba(131, 68, 26, 0.86);
+    background-color: antiquewhite;
+    border-radius: 20px;
+    border: 5px solid rgba(131, 68, 26, 0.86);
+    padding: 0.5em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    max-width: 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    justify-content: center;
+    margin: 10%;
+    background-color: antiquewhite;
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+    color: rgba(131, 68, 26, 0.86);
+    border: 0.5em solid rgba(131, 68, 26, 0.86);
+    border-radius: 30px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+figure {
+    text-align: center;
+    justify-content: center;
+}
+
+figure img {
+    max-width: 200px;
+    height: auto;
+}
+
+@media (min-width: 820px) {
+.pizza {
+    margin-top: 10em;
+    flex-direction: row;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.img-pizza {
+        max-height: 500px;
+}
+
+    .pizza p {
+        font-size: 2vw;
+        padding-left: 1em;
+        padding-right: 1em;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        transform: translateX(-5px);
+        padding: 0.5em;
+    }
+
+    .logo {
+        max-width: 40px;
+        border: none;
+    }
+    .gallery {
+        padding: 1.5em;
+        margin: 5em;
+        font-size: 2vw;
+    }
+
+    figure img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
 /* FORM */
 
 .form {
@@ -390,7 +496,6 @@ body {
     background-repeat: no-repeat;
     margin-left: 10%;
     margin-right: 10%;
-    margin-top: 15%;
     margin-bottom: 5%;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
