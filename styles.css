@@ -1,8 +1,8 @@
 :root {
-    --bg-primary: antiquewhite;
+    --bg-primary: #faebd7;
     --bg-secondary: rgb(227, 224, 224);
-    --text-primary: rgba(131, 68, 26, 0.86);
-    --text-secondary: rgb(91, 35, 0);
+    --text-primary: #5D3113BD;
+    --text-secondary: #5b2300;
 }
 
 @keyframes fade-in {
@@ -259,7 +259,7 @@ body {
     border: 8px solid var(--text-primary);
 }
 
-.pres h1 {
+.pres h2 {
     margin-top: 7%;
     color: var(--text-primary);
     padding-bottom: 0;
@@ -269,7 +269,7 @@ body {
     font-size: 20px;
 }
 
-.pres h1::after {
+.pres h2::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -280,7 +280,7 @@ body {
     animation: underline-animation 3s infinite;
 }
 
-.pres h2 {
+.pres h3 {
     font-size: 16px;
     color: var(--text-primary);
     padding-left: 5%;
@@ -295,11 +295,11 @@ body {
         width: 40%;
     }
 
-    .pres h1 {
+    .pres h2 {
         font-size: 2rem;
     }
 
-    .pres h2 {
+    .pres h3 {
         font-size: 1.5rem;
     }
 }
@@ -394,7 +394,7 @@ body {
 
 .img-pizza {
     max-height: 300px;
-    max-width: auto;
+    width: auto;
     border-radius: 15%;
     border: 5px solid rgba(131, 68, 26, 0.86);
 }
@@ -403,7 +403,7 @@ body {
     font-family: 'Pacifico', cursive;
     text-align: center;
     font-size: 16px;
-    color: rgba(131, 68, 26, 0.86);
+    color: var(--text-primary);
     background-color: antiquewhite;
     border-radius: 20px;
     border: 5px solid rgba(131, 68, 26, 0.86);
